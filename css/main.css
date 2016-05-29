@@ -22,6 +22,7 @@ li{
 header{
 	background-color: #fff;
 	border-bottom: 1px solid #E1E1E1;
+	box-shadow: 0 1px 5px rgba(0,0,0,.5);
 	padding: 1.5em 0;
 	width: 100%;
 	position: fixed;
@@ -63,10 +64,10 @@ header nav ul li a:hover{
 	padding: 20px;
 	width: 247px;
 	margin: 0 auto;
-	
 }
 #container-me .avatar-section figure img{
 	border-radius: 50%;
+	width: 247px;
 }
 #container-me .avatar-section .social-icons{
 	font-family: 'social-icons', sans-serif;
@@ -89,17 +90,37 @@ header nav ul li a:hover{
 #container-me .avatar-section .social-icons .icon-facebook:before{
 	content: "\ea90";
 }
+#container-me .avatar-section .social-icons .icon-facebook{
+	background-color: #3B5998;
+	color: #FFFFFF;
+}
 #container-me .avatar-section .social-icons .icon-twitter:before{
 	content: "\ea96";
+}
+#container-me .avatar-section .social-icons .icon-twitter{
+	background-color: #659FCB;
+	color: #FFFFFF;
 }
 #container-me .avatar-section .social-icons .icon-github:before{
 	content: "\eab0";
 }
+#container-me .avatar-section .social-icons .icon-github{
+	background-color: #323131;
+	color: #FFFFFF;
+}
 #container-me .avatar-section .social-icons .icon-g:before{
 	content: "\ea8b";
 }
+#container-me .avatar-section .social-icons .icon-g{
+	background-color: #DD5044;
+	color: #FFFFFF;
+}
 #container-me .avatar-section .social-icons .icon-instagram:before{
 	content: "\ea92";
+}
+#container-me .avatar-section .social-icons .icon-instagram{
+	background-color: #8E378B;
+	color: #FFFFFF;
 }
 
 #container-me .description-section{

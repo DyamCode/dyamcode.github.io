@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8" />
-	<title>JhOn Al - Dcyar</title>
+	<title>DyamCode - JhOn Al</title>
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="css/main.css" />
 </head>
@@ -10,11 +10,10 @@
 	<header>
 		<nav>
 			<ul class="center-align">
-				<li class="animated infinite jello"><a href="#">About</a></li>
-				<li><a href="#">My Skills</a></li>
-				<li><a href="#">Porfolio</a></li>
-				<li><a href="#">Education</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#container-me">Inicio</a></li>
+				<li><a href="#about-me">Acerca</a></li>
+				<li><a href="#skills">Habilidades</a></li>
+				<li><a href="#experience">Experiencia</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -36,7 +35,7 @@
 			<p>Desarrollador web, con conocimientos en Frontend, Backend, apacionado de las nuevas tecnologias en internet, amante de la música y explorador de los limites de lo desconocido.</p>
 		</div>
 		<div class="view-more-link">
-			<a href="#about-me">Ver mas sobre mí</a>
+			<a id="view-more-a" href="#about-me">Ver mas sobre mí</a>
 		</div>
 	</section>
 	<section id="about-me">
@@ -108,13 +107,13 @@
 			</div> -->
 		</div>
 	</section>
-	<section class="timeline-section">
+	<section id="experience" class="timeline-section">
 		<h2>Mi Experiencia</h2>
 		<div id="cd-timeline" class="cd-container">
 			<div class="cd-timeline-block">
 				<div class="cd-timeline-content">
 					<h2>Academia Municipal - Santa Rosa</h2>
-					<p>Profesor de diseño gráfico en academia municipal santa Rosa - Melgar - Puno.</p>
+					<p>Profesor de diseño gráfico en academia municipal Santa Rosa - Melgar - Puno.</p>
 					<span class="cd-date">Febrero 2014</span>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
@@ -129,7 +128,7 @@
 
 			<div class="cd-timeline-block">
 				<div class="cd-timeline-content">
-					<h2>Essalud Arequipa</h2>
+					<h2>Essalud - Arequipa</h2>
 					<p>Mejora del sistema de control de asistencia de enfermeras.</p>
 					<span class="cd-date">Noviembre 15</span>
 				</div> <!-- cd-timeline-content -->
@@ -148,12 +147,6 @@
 		<p>&copy; Copyright 2016 - DyamCode</p>
 	</footer>
 	<script src="js/jquery-2.2.3.min.js"></script>
-	<script>
-		jQuery('.skillbar').each(function(){
-			jQuery(this).find('.skillbar-bar').animate({
-				width:jQuery(this).attr('data-percent')
-			},2000);
-		});
-	</script>
+	<script src="js/main.js"></script>
 </body>
 </html>
