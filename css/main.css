@@ -32,7 +32,9 @@ header nav{
 	margin: 0 auto;
 }
 header nav ul{
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 header nav ul li{
@@ -52,6 +54,7 @@ header nav ul li a:hover{
 
 #container-me{
 	padding: 12em 1em 4em;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 #container-me .avatar-section{
@@ -73,8 +76,11 @@ header nav ul li a:hover{
 	font-family: 'social-icons', sans-serif;
 	font-size: 1.7em;
 	margin: 1em auto .5em;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack:center;
 	justify-content:center;
+	-ms-flex-direction: row;
 	flex-direction: row;
 }
 #container-me .avatar-section .social-icons a{
