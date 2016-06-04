@@ -1,0 +1,219 @@
+@import url('skills.css');
+@import url('timeline.css');
+@font-face {
+    font-family: 'social-icons';
+    src:    url('../fonts/social-icons.eot?jzm2oy');
+    src:    url('../fonts/social-icons.eot?jzm2oy#iefix') format('embedded-opentype'),
+        url('../fonts/social-icons.ttf?jzm2oy') format('truetype'),
+        url('../fonts/social-icons.woff?jzm2oy') format('woff'),
+        url('../fonts/social-icons.svg?jzm2oy#social-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, ul, ol, h1,h2,h3,h4,h5,h6, figure, img{
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+li{
+	list-style: none;
+}
+header{
+	background-color: #fff;
+	border-bottom: 1px solid #E1E1E1;
+	box-shadow: 0 1px 5px rgba(0,0,0,.5);
+	padding: 1.5em 0;
+	width: 100%;
+	position: fixed;
+	z-index: 99;
+}
+header nav{
+	margin: 0 auto;
+}
+header nav ul{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+header nav ul li{
+	padding: 1em 2em;
+	margin: 0 1em;
+}
+header nav ul li a{
+	font-weight: lighter;
+	color: #808080;
+	font-size: 1.2em;
+	padding: .5em;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	color: #4db6ac;
+}
+
+#container-me{
+	padding: 12em 1em 4em;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+#container-me .avatar-section{
+	width: 95%;
+	margin: 0 auto;
+}
+#container-me .avatar-section figure {
+	border: 1px dashed #BBBBBB;
+	border-radius: 50%;
+	padding: 20px;
+	width: 247px;
+	margin: 0 auto;
+}
+#container-me .avatar-section figure img{
+	border-radius: 50%;
+	width: 247px;
+}
+#container-me .avatar-section .social-icons{
+	font-family: 'social-icons', sans-serif;
+	font-size: 1.7em;
+	margin: 1em auto .5em;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+#container-me .avatar-section .social-icons a{
+	color: #2F2F2F;
+	margin: 0 .5em;
+	text-decoration: none;
+}
+#container-me .avatar-section .social-icons a span{
+	border: 1px dotted #A9A9A9;
+	border-radius: 50%;
+	padding: 10px;
+}
+#container-me .avatar-section .social-icons .icon-facebook:before{
+	content: "\ea90";
+}
+#container-me .avatar-section .social-icons .icon-facebook{
+	background-color: #3B5998;
+	color: #FFFFFF;
+}
+#container-me .avatar-section .social-icons .icon-twitter:before{
+	content: "\ea96";
+}
+#container-me .avatar-section .social-icons .icon-twitter{
+	background-color: #659FCB;
+	color: #FFFFFF;
+}
+#container-me .avatar-section .social-icons .icon-github:before{
+	content: "\eab0";
+}
+#container-me .avatar-section .social-icons .icon-github{
+	background-color: #323131;
+	color: #FFFFFF;
+}
+#container-me .avatar-section .social-icons .icon-g:before{
+	content: "\ea8b";
+}
+#container-me .avatar-section .social-icons .icon-g{
+	background-color: #DD5044;
+	color: #FFFFFF;
+}
+#container-me .avatar-section .social-icons .icon-instagram:before{
+	content: "\ea92";
+}
+#container-me .avatar-section .social-icons .icon-instagram{
+	background-color: #8E378B;
+	color: #FFFFFF;
+}
+
+#container-me .description-section{
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 2em;
+	text-align: center;
+}
+#container-me .description-section h1{
+	color: #444444;
+	font-size: 3.5em;
+	font-weight: normal;
+}
+#container-me .description-section p{
+	color: #444444;
+	font-size: 1.4em;
+	font-weight: lighter;
+}
+#container-me .view-more-link{
+	margin: 4em auto 2em;
+	text-align: center;
+}
+#container-me .view-more-link a{
+	border: 1px solid #A9A9A9;
+	border-radius: 25px;
+	padding: 1em;
+	text-decoration: none;
+
+}
+#container-me .view-more-link a:hover{
+	background-color: #4db6ac;
+	color: #fff;
+}
+
+#about-me{
+	background-color: #1976d2;
+	padding: 5em 1em 4em;
+}
+#about-me h2{
+	color: #FFFFFF;
+	font-size: 5em;
+	font-weight: lighter;
+	text-align: center;
+}
+#about-me p{
+	color: #fff;
+	font-size: 1.7em;
+	font-weight: lighter;
+	text-align: center;
+	margin: 2em auto;
+	width: 60%;
+}
+.skills-container{
+	margin: 2em auto;
+	width: 50%;
+}
+#skills{
+	background-color: #EEEEEE;
+	padding: 5em 1em 4em;
+}
+#skills h2{
+	color: #3D3D3D;
+	font-size: 5em;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.timeline-section{
+  background-color: #009688;
+  padding: 5em 1em 4em;
+}
+
+.timeline-section > h2{
+	color: #ffffff;
+	font-size: 5em;
+	font-weight: lighter;
+	text-align: center;
+}
+
+footer{
+	color: #FFFFFF;
+	background-color: #474D5D;
+	text-align: center;
+	margin: auto;
+  	padding: 5em 1em 4em;
+}
+footer p{
+	margin: 0;
+	vertical-align: middle;
+}
