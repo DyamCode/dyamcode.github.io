@@ -2,32 +2,41 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8" />
-	<title>DyamCode - JhOn Al</title>
+	<title>JhOn Al - Desarrollador web y programador</title>
+	<meta name="author" content="jmal_444@outlook.com" />
+	<meta name="owner" content="Jhon Marco Achata Limachi" />
+	<meta name="description" content="Desarrollador web, con conocimientos en Frontend, Backend, apacionado de las nuevas tecnologias en internet, amante de la música y explorador de los limites de lo desconocido" />
+	<meta name="keywords" content="jhon achata limachi, portafolio, curriculum vitae, habilidades, programador, desarrollador web, jhon al, dcyar, paginas web, diseño web, web" />
+	
+	<link rel="shortcut icon" type="image/x-icon" href="images/dc.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" href="dist/main.css" />
+	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
 	<header>
-		<nav>
-			<ul class="center-align">
-				<li><a href="#container-me">Inicio</a></li>
+		<nav rol="navigation">
+			<ul class="topnav">
+				<li><a class="active" href="#container-me">Inicio</a></li>
 				<li><a href="#about-me">Acerca</a></li>
 				<li><a href="#skills">Habilidades</a></li>
 				<li><a href="#experience">Experiencia</a></li>
+				<li class="icon">
+			    	<a href="javascript:void(0);" style="font-size:20px;" onclick="myFunction()">☰</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
-	<section id="container-me">
+	<section id="container-me" rol="main">
 		<div class="avatar-section">
 			<figure>
 				<img src="images/avatar.jpg" alt="JhOn Al" />
 			</figure>
 			<div class="social-icons">
-				<a href="http://www.facebook.com/dcyar444" target="_blank" alt="Facebook"><span class="icon-facebook"></span>	</a>
-				<a href="http://twitter.com/Dcyar4" target="_blank alt="Twitter"><span class="icon-twitter"></span></a>
-				<a href="http://github.com/Dcyar" target="_blank alt="Github"><span class="icon-github"></span></a>
-				<a href="http://plus.google.com/u/0/104817097691884314287" target="_blank alt="Google+"><span class="icon-g"></span></a>
-				<a href="https://www.instagram.com/dcyar/" target="_blank alt="Instagram"><span class="icon-instagram"></span></a>
+				<a href="http://www.facebook.com/dcyar444" target="_blank"><span class="icon-facebook"></span>	</a>
+				<a href="http://twitter.com/Dcyar4" target="_blank"><span class="icon-twitter"></span></a>
+				<a href="http://github.com/Dcyar" target="_blank"><span class="icon-github"></span></a>
+				<a href="http://plus.google.com/u/0/104817097691884314287" target="_blank"><span class="icon-g"></span></a>
 			</div>
 		</div>
 		<div class="description-section">
@@ -38,11 +47,11 @@
 			<a id="view-more-a" href="#about-me">Ver mas sobre mí</a>
 		</div>
 	</section>
-	<section id="about-me">
+	<section id="about-me" rol="main">
 		<h2>Acerca de mí</h2>
 		<p>Soy una persona curiosa en cuanto a las nuevas tecnologías para el desarrollo web, móvil, la calidad y experiencia humana, me interesa el diseño gráfico, animación 3D, producción de videos y tambien me encanta la música, fotografía y poesía.</p>
 	</section>
-	<section id="skills">
+	<section id="skills" rol="main">
 		<h2>Mis Habilidades</h2>
 		<div class="skills-container">
 			<div class="skillbar clearfix " data-percent="95%">
@@ -85,29 +94,9 @@
 				<div class="skillbar-bar" style="background: #2E1D15;"></div>
 				<div class="skill-bar-percent">75%</div>
 			</div>
-			<!-- <div class="skillbar clearfix " data-percent="68%">
-				<div class="skillbar-title" style="background: #90C53F;"><span>NODEJS</span></div>
-				<div class="skillbar-bar" style="background: #90C53F;"></div>
-				<div class="skill-bar-percent">68%</div>
-			</div>
-			<div class="skillbar clearfix " data-percent="60%">
-				<div class="skillbar-title" style="background: #0C4B33;"><span>DJANGO</span></div>
-				<div class="skillbar-bar" style="background: #0C4B33;"></div>
-				<div class="skill-bar-percent">60%</div>
-			</div>
-			<div class="skillbar clearfix " data-percent="55%">
-				<div class="skillbar-title" style="background: #CC0000;"><span>RUBY ON RAILS</span></div>
-				<div class="skillbar-bar" style="background: #CC0000;"></div>
-				<div class="skill-bar-percent">55%</div>
-			</div>
-			<div class="skillbar clearfix " data-percent="50%">
-				<div class="skillbar-title" style="background: #4280B2;"><span>PYTHON</span></div>
-				<div class="skillbar-bar" style="background: #4280B2;"></div>
-				<div class="skill-bar-percent">50%</div>
-			</div> -->
 		</div>
 	</section>
-	<section id="experience" class="timeline-section">
+	<section id="experience" class="timeline-section" rol="main">
 		<h2>Mi Experiencia</h2>
 		<div id="cd-timeline" class="cd-container">
 			<div class="cd-timeline-block">
@@ -115,30 +104,35 @@
 					<h2>Academia Municipal - Santa Rosa</h2>
 					<p>Profesor de diseño gráfico en academia municipal Santa Rosa - Melgar - Puno.</p>
 					<span class="cd-date">Febrero 2014</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
+				</div>
+			</div>
 
 			<div class="cd-timeline-block">
 				<div class="cd-timeline-content">
 					<h2>Essalud - Arequipa</h2>
 					<p>Mejora del sistema de control de asistencia de enfermeras.</p>
 					<span class="cd-date">Noviembre 15</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
+				</div>
+			</div>
 
 			<div class="cd-timeline-block">
 				<div class="cd-timeline-content">
 					<h2>Desarrollador Web - Empresac</h2>
 					<p>Encargado del área de desarrollo de páginas web, automatización de caracteristicas(mapas, slider's, etc.) en el desarrollo frontend.</p>
 					<span class="cd-date">Mayo 16</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
-		</div> <!-- cd-timeline -->
+				</div>
+			</div>
+		</div>
 	</section>
-	<footer>
+	<footer rol="footer">
 		<p>&copy; Copyright 2016 - DyamCode</p>
 	</footer>
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		function myFunction() {
+		    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+		}
+	</script>
 </body>
 </html>

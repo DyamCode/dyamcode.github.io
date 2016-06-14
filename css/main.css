@@ -20,37 +20,43 @@ li{
 	list-style: none;
 }
 header{
-	background-color: #fff;
-	border-bottom: 1px solid #E1E1E1;
-	box-shadow: 0 1px 5px rgba(0,0,0,.5);
+    background-color: #FFFFFF;
 	padding: 1.5em 0;
 	width: 100%;
 	position: fixed;
 	z-index: 99;
+    transition: all .5s ease;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.header-border{
+    border-bottom: 1px solid #E1E1E1;
+	box-shadow: 0 1px 5px rgba(0,0,0,.5);
 }
 header nav{
 	margin: 0 auto;
 }
-header nav ul{
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: center;
-	justify-content: center;
+ul.topnav {
+  list-style-type: none;
+  overflow: hidden;
 }
-header nav ul li{
-	padding: 1em 2em;
-	margin: 0 1em;
+
+ul.topnav li {float: left; margin: 0 2em;}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #808080;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: lighter;
 }
-header nav ul li a{
-	font-weight: lighter;
-	color: #808080;
-	font-size: 1.2em;
-	padding: .5em;
-	text-decoration: none;
-}
-header nav ul li a:hover{
-	color: #4db6ac;
-}
+
+ul.topnav li a:hover {color: #4db6ac;}
+
+ul.topnav li.icon {display: none;}
 
 #container-me{
 	padding: 12em 1em 4em;
@@ -97,38 +103,59 @@ header nav ul li a:hover{
 	content: "\ea90";
 }
 #container-me .avatar-section .social-icons .icon-facebook{
+	color: #000000;
+    transition: background-color .5s ease;
+    -webkit-transition: background-color .5s ease;
+}
+#container-me .avatar-section .social-icons .icon-facebook:hover{
 	background-color: #3B5998;
-	color: #FFFFFF;
+    color: #FFFFFF;
 }
 #container-me .avatar-section .social-icons .icon-twitter:before{
 	content: "\ea96";
 }
 #container-me .avatar-section .social-icons .icon-twitter{
+    color: #000000;
+    transition: background-color .5s ease;
+    -webkit-transition: background-color .5s ease;
+}
+#container-me .avatar-section .social-icons .icon-twitter:hover{
 	background-color: #659FCB;
-	color: #FFFFFF;
+    color: #FFFFFF;
 }
 #container-me .avatar-section .social-icons .icon-github:before{
 	content: "\eab0";
 }
 #container-me .avatar-section .social-icons .icon-github{
+	color: #000000;
+}
+#container-me .avatar-section .social-icons .icon-github:hover{
 	background-color: #323131;
 	color: #FFFFFF;
+    transition: background-color .5s ease;
+    -webkit-transition: background-color .5s ease;
 }
 #container-me .avatar-section .social-icons .icon-g:before{
 	content: "\ea8b";
 }
 #container-me .avatar-section .social-icons .icon-g{
+	color: #000000;
+}
+#container-me .avatar-section .social-icons .icon-g:hover{
 	background-color: #DD5044;
 	color: #FFFFFF;
+    transition: background-color .5s ease;
+    -webkit-transition: background-color .5s ease;
 }
 #container-me .avatar-section .social-icons .icon-instagram:before{
 	content: "\ea92";
+    display: none;
 }
 #container-me .avatar-section .social-icons .icon-instagram{
 	background-color: #8E378B;
 	color: #FFFFFF;
+    display: none;
 }
-
 #container-me .description-section{
 	width: 50%;
 	margin: 0 auto;
@@ -151,10 +178,11 @@ header nav ul li a:hover{
 }
 #container-me .view-more-link a{
 	border: 1px solid #A9A9A9;
+    color: #000000;
 	border-radius: 25px;
 	padding: 1em;
 	text-decoration: none;
-
+    transition: background-color .5s ease;
 }
 #container-me .view-more-link a:hover{
 	background-color: #4db6ac;
@@ -216,4 +244,50 @@ footer{
 footer p{
 	margin: 0;
 	vertical-align: middle;
+}
+@media screen and (max-width: 1600px) {
+    .cd-container{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .cd-container{
+        width: 90%;
+    }
+    .skills-container, #about-me p, #container-me .description-section{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .skills-container, #about-me p, #container-me .description-section{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    header{
+        display: block;
+    }
+    #container-me{padding: 8em 1em 4em;}
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+    margin: 0;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
