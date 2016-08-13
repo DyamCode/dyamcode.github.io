@@ -17,7 +17,7 @@ function main(){
 function goTo(){
     var section = $(this).attr('href');
     $('body, html').animate({
-        scrollTop: $(section).offset().top-100
+        scrollTop: $(section).offset().top-60
     }, 500);
 
     return false;

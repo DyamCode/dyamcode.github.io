@@ -327,6 +327,7 @@ footer p{
 }
 @media screen and (max-width: 1300px) {
     .cd-container{
+        margin-top: 0 !important;
         width: 90%;
     }
     .skills-container, #about-me p, #container-me .description-section, #portfolio p{
@@ -335,41 +336,67 @@ footer p{
 }
 
 @media screen and (max-width: 900px) {
-    #about-me , #container-me, #portfolio, #experience{
+    #container-me .avatar-section figure,
+    #container-me .avatar-section figure img{
+        width: 180px;
+    }
+    #skills, #about-me, #container-me, #portfolio, #experience{
         padding: 2em 1em 1em;
     }
     .skills-container, #about-me p, #container-me .description-section, #portfolio p{
         margin: 1em auto;
         width: 95%;
     }
-    .skills-container h2, #about-me h2, #container-me .description-section h2, #portfolio h2{
-        font-size: 3.5em;
+    #skills h2, #about-me h2, #container-me .description-section h2, #portfolio h2, #experience > h2 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    #about-me > p{
+        font-size: 1.2em;
+    }
+    #experience .cd-timeline-content h2{
+        font-size: 2em;
+    }
+    #portfolio .jobs .job figure figcaption{
+        bottom: 4px;
+        background-color: rgba(0,0,0,.9);
+    }
+    #cd-timeline::before{
+        display: none;
+    }
+    .cd-timeline-content{
+        margin-left: 0;
     }
 }
 
 @media screen and (max-width:800px) {
     header{
         display: block;
+        padding: 0;
     }
     #container-me{padding: 8em 1em 4em;}
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-    margin: 0;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
+      ul.topnav li:not(:first-child) {display: none;}
+      ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+      }
+      ul.topnav.responsive {position: relative;}
+      ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      ul.topnav.responsive li {
+        float: none;
+        display: inline;
+        margin: 0;
+      }
+      ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+      }
+      #portfolio .jobs .job{
+          margin-bottom: 1em;
+          width: 100%;
+      }
 }
