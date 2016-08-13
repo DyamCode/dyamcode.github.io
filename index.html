@@ -216,6 +216,9 @@
 	<script>
 		function myFunction() {
 		    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+			$('nav ul li a').on('click',function(){
+				$(".topnav").removeClass("responsive");
+			});
 		}
 	</script>
 </body>
