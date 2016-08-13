@@ -221,14 +221,72 @@ ul.topnav li.icon {display: none;}
 	font-weight: lighter;
 	text-align: center;
 }
+#portfolio{
+	background-color: #009688;
+	padding: 5em 1em 4em;
+}
+#portfolio h2{
+	color: #FFFFFF;
+	font-size: 5em;
+	font-weight: lighter;
+	text-align: center;
+}
+#portfolio p{
+	color: #fff;
+	font-size: 1.7em;
+	font-weight: lighter;
+	text-align: center;
+	margin: 2em auto;
+	width: 60%;
+}
+#portfolio .jobs{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#portfolio .jobs .job{
+    text-align: center;
+    width: 30%;
+    margin-bottom: 2em;
+}
+#portfolio .jobs .job figure{
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+#portfolio .jobs .job figure img{
+    width: 100%;
+}
+#portfolio .jobs .job figure:hover > figcaption{
+    bottom: 4px;
+}
+#portfolio .jobs .job figure figcaption{
+    background-color: rgba(0,0,0,.7);
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    bottom: -48px;
+    text-align: center;
+    width: 100%;
+    transition: bottom .2s ease;
+}
+#portfolio .jobs .job figure figcaption a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.4em;
+    cursor: pointer;
+}
 
 .timeline-section{
-  background-color: #009688;
+  background-color: #EEEEEE;
   padding: 5em 1em 4em;
 }
 
 .timeline-section > h2{
-	color: #ffffff;
+	color: #000000;
 	font-size: 5em;
 	font-weight: lighter;
 	text-align: center;
@@ -245,23 +303,47 @@ footer p{
 	margin: 0;
 	vertical-align: middle;
 }
+
+/*
+    Helpers class
+*/
+.bold-text{
+    font-weight: bold !important;
+}
 @media screen and (max-width: 1600px) {
     .cd-container{
         width: 70%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    #portfolio .jobs{
+        flex-wrap: wrap;
+        width: 95%;
+    }
+    #portfolio .jobs .job{
+        margin-bottom: 1em;
+        width: 48%;
     }
 }
 @media screen and (max-width: 1300px) {
     .cd-container{
         width: 90%;
     }
-    .skills-container, #about-me p, #container-me .description-section{
+    .skills-container, #about-me p, #container-me .description-section, #portfolio p{
         width: 70%;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .skills-container, #about-me p, #container-me .description-section{
+    #about-me , #container-me, #portfolio, #experience{
+        padding: 2em 1em 1em;
+    }
+    .skills-container, #about-me p, #container-me .description-section, #portfolio p{
+        margin: 1em auto;
         width: 95%;
+    }
+    .skills-container h2, #about-me h2, #container-me .description-section h2, #portfolio h2{
+        font-size: 3.5em;
     }
 }
 
