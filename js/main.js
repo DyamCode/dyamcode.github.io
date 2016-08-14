@@ -13,6 +13,10 @@ $(window).scroll(function(){
 function main(){
     $('header li a').on('click', goTo);
     $('#view-more-a').on('click', goTo);
+    $('.skillbar').each(function(){
+        $(this).find('.skillbar-bar').animate({width:$(this).attr('data-percent')
+        },2000);
+    });
 }
 function goTo(){
     var section = $(this).attr('href');
@@ -22,7 +26,10 @@ function goTo(){
 
     return false;
 }
-$('.skillbar').each(function(){
-    $(this).find('.skillbar-bar').animate({width:$(this).attr('data-percent')
-    },2000);
-});
+
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+    $('nav ul li a').on('click',function(){
+        $(".topnav").removeClass("responsive");
+    });
+}

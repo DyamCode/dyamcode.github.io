@@ -1,4 +1,3 @@
-@import url('skills.css');
 @import url('timeline.css');
 @font-face {
     font-family: 'social-icons';
@@ -207,10 +206,6 @@ ul.topnav li.icon {display: none;}
 	margin: 2em auto;
 	width: 60%;
 }
-.skills-container{
-	margin: 2em auto;
-	width: 50%;
-}
 #skills{
 	background-color: #EEEEEE;
 	padding: 5em 1em 4em;
@@ -221,6 +216,34 @@ ul.topnav li.icon {display: none;}
 	font-weight: lighter;
 	text-align: center;
 }
+.skills-container{
+    margin: 2em auto;
+    width: 60%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills-container figure{
+    margin-bottom: 1.5em;
+}
+.skills-container figure img{
+    margin: 0;
+    width: 200px;
+    transition: all .4s ease;
+}
+.skills-container figure img:hover{
+    transform: scale(1.1);
+}
+.skills-container figure figcaption{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 #portfolio{
 	background-color: #009688;
 	padding: 5em 1em 4em;
@@ -398,5 +421,14 @@ footer p{
       #portfolio .jobs .job{
           margin-bottom: 1em;
           width: 100%;
+      }
+      .skills-container{
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .skills-container figure img{
+        margin: 0;
+        width: 150px;
       }
 }

@@ -28,7 +28,7 @@
 				<li><a href="#experience">Experiencia</a></li>
 				<li><a href="https://dyamcode.blogspot.pe/" class="bold-text" target="_blank">Blog</a></li>
 				<li class="icon">
-			    	<a href="javascript:void(0);" style="font-size:20px;" onclick="myFunction()">☰</a>
+			    	<a href="#" style="font-size:20px;" onclick="myFunction()">☰</a>
 				</li>
 			</ul>
 		</nav>
@@ -60,51 +60,46 @@
 	<section id="skills" rol="main">
 		<h2>Mis Habilidades</h2>
 		<div class="skills-container">
-			<div class="skillbar clearfix " data-percent="95%">
-				<div class="skillbar-title" style="background: #F15931;"><span>HTML5</span></div>
-				<div class="skillbar-bar" style="background: #F15931;"></div>
-				<div class="skill-bar-percent">95%</div>
-			</div>
-			<div class="skillbar clearfix " data-percent="85%">
-				<div class="skillbar-title" style="background: #007DC6;"><span>CSS3</span></div>
-				<div class="skillbar-bar" style="background: #007DC6;"></div>
-				<div class="skill-bar-percent">85%</div>
-			</div>
-			<div class="skillbar clearfix " data-percent="65%">
-				<div class="skillbar-title" style="background: #F58233;"><span>JAVASCRIPT</span></div>
-				<div class="skillbar-bar" style="background: #F58233;"></div>
-				<div class="skill-bar-percent">65%</div>
-			</div>
-			<div class="skillbar clearfix " data-percent="60%">
-				<div class="skillbar-title" style="background: #8892BF;"><span>PHP</span></div>
-				<div class="skillbar-bar" style="background: #8892BF;"></div>
-				<div class="skill-bar-percent">60%</div>
-			</div>
-			<div class="skillbar clearfix " data-percent="60%">
-				<div class="skillbar-title" style="background: #20AA76;"><span>DJANGO</span></div>
-				<div class="skillbar-bar" style="background: #20AA76;"></div>
-				<div class="skill-bar-percent">60%</div>
-			</div>
-			<div class="skillbar clearfix " data-percent="60%">
-				<div class="skillbar-title" style="background: #DE0000;"><span>JAVA</span></div>
-				<div class="skillbar-bar" style="background: #DE0000;"></div>
-				<div class="skill-bar-percent">60%</div>
-			</div>
-			<div class="skillbar clearfix " data-percent="70%">
-				<div class="skillbar-title" style="background: #F34F29;"><span>GIT</span></div>
-				<div class="skillbar-bar" style="background: #F34F29;"></div>
-				<div class="skill-bar-percent">70%</div>
-			</div>
-			<div class="skillbar clearfix " data-percent="80%">
-				<div class="skillbar-title" style="background: #08004B;"><span>PHOTOSHOP</span></div>
-				<div class="skillbar-bar" style="background: #08004B;"></div>
-				<div class="skill-bar-percent">80%</div>
-			</div>
-			<div class="skillbar clearfix " data-percent="65%">
-				<div class="skillbar-title" style="background: #2E1D15;"><span>ILLUSTRATOR</span></div>
-				<div class="skillbar-bar" style="background: #2E1D15;"></div>
-				<div class="skill-bar-percent">65%</div>
-			</div>
+			<figure>
+				<img src="images/skills/html5.png" alt="">
+				<figcaption>HTML5</figcaption>
+			</figure>
+			<figure>
+				<img src="images/skills/css3.png" alt="">
+				<figcaption>CSS3</figcaption>
+			</figure>
+			<figure>
+				<img src="images/skills/javascript.png" alt="">
+				<figcaption>JAVASCRIPT</figcaption>
+			</figure>
+			<figure>
+				<img src="images/skills/jquery.png" alt="">
+				<figcaption>JQUERY</figcaption>
+			</figure>
+			<figure>
+				<img src="images/skills/php.png" alt="">
+				<figcaption>PHP</figcaption>
+			</figure>
+			<figure>
+				<img src="images/skills/django.png" alt="">
+				<figcaption>DJANGO</figcaption>
+			</figure>
+			<figure>
+				<img src="images/skills/java.png" alt="">
+				<figcaption>JAVA</figcaption>
+			</figure>
+			<figure>
+				<img src="images/skills/git.png" alt="">
+				<figcaption>GIT</figcaption>
+			</figure>
+			<figure>
+				<img src="images/skills/photoshop.png" alt="">
+				<figcaption>PHOTOSHOP</figcaption>
+			</figure>
+			<figure>
+				<img src="images/skills/illustrator.png" alt="">
+				<figcaption>ILLUSTRATOR</figcaption>
+			</figure>
 		</div>
 	</section>
 	<section id="portfolio" rol="main">
@@ -217,13 +212,5 @@
 	</footer>
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		function myFunction() {
-		    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-			$('nav ul li a').on('click',function(){
-				$(".topnav").removeClass("responsive");
-			});
-		}
-	</script>
 </body>
 </html>
